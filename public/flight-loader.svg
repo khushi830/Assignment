@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes rotateRing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes pulseJet {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.08); opacity: 0.9; }
+    }
+    .ring { transform-origin: 100px 100px; animation: rotateRing 8s linear infinite; }
+    .jet { transform-origin: 100px 100px; animation: pulseJet 2.2s ease-in-out infinite; }
+  </style>
+  <circle cx="100" cy="100" r="90" fill="#0E1A39" />
+  <circle class="ring" cx="100" cy="100" r="76" stroke="#FDAF23" stroke-width="2" stroke-dasharray="8 6" opacity="0.7" />
+  <circle cx="100" cy="100" r="54" fill="#081534" stroke="#FDAF23" stroke-width="1.5" />
+  <circle cx="100" cy="30" r="4" fill="#0C9488" />
+  <g class="jet">
+    <path d="M100 65 L106 88 L128 98 L128 106 L106 102 L106 122 L114 128 L114 135 L100 131 L86 135 L86 128 L94 122 L94 102 L72 106 L72 98 L94 88 Z" fill="#FDAF23" />
+  </g>
+</svg>
+
